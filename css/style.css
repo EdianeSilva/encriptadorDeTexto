@@ -1,0 +1,119 @@
+body {
+  background-image: url("../img/background.jpg");
+  font-family: 'Quantico', sans-serif;
+}
+main{
+  margin: 0 auto;
+}
+
+.caixa-texto {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  width: 33%;
+  text-align: center;
+}
+
+.item textarea {
+  padding: 30px;
+}
+
+h1 {
+  margin: 40px;
+  font-size: 2.5em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Monoton', cursive;
+}
+
+.input, .output{
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.67);
+  border: solid 2px rgb(0, 174, 255);
+  border-radius: 20px;
+  color: rgb(0, 174, 255);
+  font-size: 20px;
+
+}
+
+.copiar {
+  width: 200px;
+  background: rgba(0, 0, 0, 0.67);
+  color: white;
+  border: solid 2px rgba(0, 174, 255, 0.689);
+  border-radius: 15px;
+}
+
+.copiar:hover {
+  border: solid 2px rgb(254, 255, 254);
+  box-shadow: 5px 5px 15px rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.encriptar {
+  display: block;
+  margin: 30px 10px;
+  padding: 30px;
+}
+
+.botoes {
+  width: 33%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.botoes button {
+  width: 50%;
+  height: 10%;
+  background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90% );
+  font-size: 1rem;
+  border: solid 2px rgb(0, 174, 255);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgb(0, 174, 255);
+  color: white;
+  cursor: pointer;
+}
+
+.botoes button:hover {
+  border: solid 2px rgb(254, 255, 254);
+  box-shadow: 5px 5px 15px rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  height: 30px;
+  font-family: 'Sacramento', cursive;
+  text-decoration: none;
+}
+h2 strong {
+  font-size: 1.4rem;
+}
+
+@media(max-width: 769px) {
+  .caixa-texto{
+  display: block;
+  width: 100%;
+  justify-content: center;
+  margin:0px;
+  margin-bottom: 5px;
+  }
+  .container{
+    width: 100%;
+    margin-bottom:5px;
+  }
+  .botoes{
+    width: 90%;
+    height: 10%;
+    align-items: center;
+  }
+}

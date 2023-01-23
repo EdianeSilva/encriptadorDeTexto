@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Orbitron&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Encriptador de Texto</title>
+</head>
+
+<body>
+  <main>
+    <h1>Encriptador de texto</h1>
+
+    <section class="caixa-texto">
+      <div class="container item">
+        <textarea placeholder="Digite aqui apenas letras minusculas e sem acento" id="texto-entrada" cols="30" rows="10" class="input"></textarea>
+      </div>
+
+      <div class="container item">
+        <textarea name="" placeholder="Seu texto aparece aqui" id="texto-saida" cols="30" rows="10" class="output"></textarea>
+        <button class="copiar" onclick="copiarTexto()">Copiar</button>
+      </div>
+    </section>
+
+    <section class="container-botoes">
+      <div class="botoes">
+        <button class="encriptar" onclick="encrypt()">Criptografar</button>
+        <button class="encriptar" onclick="descript()">Descriptografar</button>
+      </div>
+    </section>
+  </main>
+
+    <footer class="page-footer" id="sobre">
+      <div class="footer-copyright">
+        <div class="container">
+        © Ediane Silva - 2022
+        </div>
+      </div>
+    </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
